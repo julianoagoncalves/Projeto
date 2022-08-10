@@ -24,3 +24,9 @@ section {
 #contato {
     background-color: rgb(0, 0, 0);
 } */
+
+
+nav>a>h2{
+    text-align: center;
+    color: white;
+}
