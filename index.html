@@ -4,62 +4,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projeto 01</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <title>Landing Page</title>
     </head>
-    
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark justify-content-end" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#" >Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#projetos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="" alt="Logo" title="Logo">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
-          <table>
-            <table class="table table-hover table-dark">
-              <thead>
-                <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Cargo</th>
-                  <th scope="col">Sálario</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Bruno</td>
-                  <td>Lucas</td>
-                  <td>Juliano</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Dono da internet</td>
-                  <td>Dev Senior</td>
-                  <td>Subalterno</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>R$ 9999.999.999,99</td>
-                  <td>R$ 9999.999,99</td>
-                  <td>R$ 1,99</td>
-                </tr>
-              </tbody>
-            </table>
-          </table>
+            <div class="container">
+                <section id="sobre">
+                    <div class="card-deck m-5">
+                        <div class="card">
+                            <img class="card-img-top" src="img/bruno.jpeg" alt="Bruno Manzini - CEO" title="Bruno Manzini - CEO">
+                            <div class="card-body">
+                                <h5 class="card-title">Bruno Manzini - CEO</h5>
+                                <p class="card-text">Dinheiro, dinheiro e dinheiro, não consigo pensar em nada melhor que dinheiro.</p>
+                                <a href="https://www.linkedin.com/in/bruno-manzini-mori-a9b138b5/" target="_blank" class="btn btn-primary">Meu saldo bancário</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/lucas.jpeg" alt="Lucas Godoy- CTO" title="Lucas Godoy- CTO">
+                            <div class="card-body">
+                                <h5 class="card-title">Lucas Godoy- CTO</h5>
+                                <p class="card-text">Sou o melhor especialista em tecnologias que irá conhecer em toda sua vida.</p>
+                                <a href="https://www.linkedin.com/in/lucasgodoy20/" target="_blank" class="btn btn-primary">Veja o que eu faço</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/juliano.jpeg" alt="Juliano Gonçalves - Hacker" title="Juliano Gonçalves - Hacker">
+                            <div class="card-body">
+                                <h5 class="card-title">Juliano Gonçalves - Hacker</h5>
+                                <p class="card-text">Se quiser sua conta de volta me envie bitcoins.</p>
+                                <a href="https://www.linkedin.com/in/juliano-goncalves-developer/" target="_blank" class="btn btn-primary">Enviar bitcoins</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contato">
+                    <div class="card m-5">
+                        <form class="m-5">
+                            <h5 class="card-title ml-3">Contato</h5>                            
+                            <div class="form-group col-6">
+                                <label for="emailMensagem">E-mail:</label>
+                                <input type="email" class="form-control border-secondary" placeholder="exemplo@exemplo.com" required>
+                            </div>                            
+                            <div class="form-group col-6">
+                                <label for="assunto">Assunto:</label>
+                                <select class="form-control border-secondary" required>
+                                    <option value="" selected disabled>Selecione o assunto</option>
+                                    <option value="">Pedir dinheiro para o Bruno</option>
+                                    <option value="">Pedir emprego para o Lucas</option>
+                                    <option value="">Aprender como hacker com o Juliano</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea class="form-control border-secondary" placeholder="Digite a menssagem aqui" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark ml-3">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </main>
+        <footer>
+            
+        </footer>
     </body>
 </html>
