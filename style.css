@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 * { margin: 0; }
@@ -11,9 +10,7 @@ body {
     font-family: 'amatic sc', sans-serif;
 }
 
-
 /*HOME PAGE */
-
 .logo {
     height: 100vh;
     width: 100%;
@@ -25,7 +22,6 @@ body {
     justify-content: center;
     position: relative;
     animation: backgroundTransition 8s ease-in-out infinite;
-    
 }
 @keyframes backgroundTransition {
     0% {
@@ -74,7 +70,6 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    
 }
 
 .port {
@@ -112,7 +107,6 @@ h1 {
 }
 
 /*cards*/
-
 .containerr {
     width: 100%;
     height: auto;
@@ -207,8 +201,8 @@ h1 {
     opacity: 1;
     visibility: visible;
 }
-/*footer*/ 
 
+/*footer*/ 
 .footer {
     height: 100px;
     width: 100%;
@@ -219,7 +213,6 @@ h1 {
 }
 
 /* responsive */
-
 /* @media (max-width: 800px) {
     .social-media {
         display: flex;
@@ -236,7 +229,6 @@ h1 {
     .container .card-container:nth-child(3){
         flex-direction: column-reverse;
     }
-
 
     .card {
         height: 250px;

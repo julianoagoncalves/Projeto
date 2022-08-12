@@ -4,7 +4,6 @@ function typeWriter(elemento){
     textoArray.forEach((letra, i) => {
      setTimeout(() => elemento.innerHTML += letra, 75 * i );
     });
-
 }
 
 const titulo = document.querySelector('h1');
