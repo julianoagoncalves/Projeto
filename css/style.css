@@ -10,6 +10,12 @@ body {
     font-family: 'amatic sc', sans-serif;
 }
 
+/* NAV */
+
+nav {
+    font-size: 20px;
+}
+
 /*HOME PAGE */
 .logo {
     height: 100vh;
@@ -128,7 +134,7 @@ h1 {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0 0;
-    background-image: url('img/room.jpg');
+    background-image: url('../img/room.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
