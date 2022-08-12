@@ -9,4 +9,6 @@ function typeWriter(elemento){
 const titulo = document.querySelector('h1');
 typeWriter (titulo);
 
+
+
 /*typeWriter(document.querySelector('h2'));*/

@@ -29,19 +29,19 @@
                             <a href="#portifolio" class="nav-link">Portifolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#agenda" class="nav-link">Agenda</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="#contato" class="nav-link">Contato</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="btn btn-outline-light btn-lg" href="#agenda">Agenda</a>
+                                
+                                <button type="button" id="navegação" class="btn btn-outline-light" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                                    Agendamento
+                                  </button>                              
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#login">Acessar Conta</a>
+                                <a class="nav-link" href="register.html">Registra-se</a>
                             </li>
                         </ul>
                     </form>
@@ -76,23 +76,6 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolore repellat rem omnis a, nihil quisquam quas ex illum dolorem minima dolores? Saepe qui quaerat excepturi totam quos quas aperiam?
                 </div>
             </section>
-            <section id="agenda">
-                <div class="calendar">
-                    <div class="container">
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="card-wrapper">
-                                    <h2>Agenda</h2>
-                                    <p>Faça já seu Agendamento.</p>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius earum doloremque accusamus quam. Similique sequi, distinctio harum a suscipit porro, impedit optio natus modi odit placeat perferendis praesentium ipsum. Incidunt.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section id="contato">
                 <div class="info">
                     <div class="card-container">
@@ -113,9 +96,45 @@
                 </div>
             </section>
         </main>
+<!-- Modal AGENDAMENTO -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Agendamento</h5>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Endereço de email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
         <footer class="footer">
-            feito por Lucas h. de Godoy
+           Designed LJB Tecnologic's
         </footer>
     </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/javascript.js"></script>
 </html>
