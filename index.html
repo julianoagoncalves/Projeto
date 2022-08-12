@@ -3,91 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title> Menu Hamburguer </title>
+    <title> Godoy BarberShop</title>
 </head>
 <body>
-    <header class="header-wrapper">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        </label>
-                        <div class="menu"></div>
-                            <nav class="menu-items">
-                                <ul>
-                                    <li>
-                                        <a href="#inicio">Home</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#sobre">Sobre</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Agenda</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contato</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/logo.png" width="120" height="80" alt="">
+                    </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portifolio" class="nav-link">Portifolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#agenda" class="nav-link">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" href="cadastro.html" >Abrir Conta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Acessar Conta</a>
+                        </li>
+                    </ul>
+                </form>
             </div>
-
-        </div>
+        </nav>
+    </header>
+<main>  
         <img src="img/logo.png" alt="logo" class="perfil">
+        <br>
         <h1>UM NOVO ESTILO UMA NOVA BARBEARIA!</h1>
-        <div class="social-media">
-            <a href="#"> Instagram</a>
-            <a href="#"> >> Agenda </a>
-        </div>
-</header>
-<section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis voluptatum ut impedit sint laborum mollitia unde, voluptatibus enim, ea suscipit explicabo aspernatur sed provident amet quos illum eveniet illo?</section>
-    <main class="container">
-        <div class="card-container">
-            <div class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita dolores delectus maiores aliquam, minima neque asperiores eligendi quisquam in minus iusto autem alias molestiae ut nemo, iste molestias ab voluptate!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officia labore eos omnis delectus, excepturi debitis fugiat, placeat tempora quas corporis ratione expedita hic consectetur error quia maxime? Est, quo!
-            </div>
-            <div class="card">
-                <div id="sobre" class="card-wrapper">
-                <h2> Sobre</h2>
-                <p>Leo Godoy</p>
-                </div>
-            </div>
-        </div> 
-        <div class="card-container">
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>Linkedin</h2>
-                    <p>Acompanhe minha carreira!!</p>
-                </div>
-            </div>
-            <div class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita dolores delectus maiores aliquam, minima neque asperiores eligendi quisquam in minus iusto autem alias molestiae ut nemo, iste molestias ab voluptate!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officia labore eos omnis delectus, excepturi debitis fugiat, placeat tempora quas corporis ratione expedita hic consectetur error quia maxime? Est, quo!
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita dolores delectus maiores aliquam, minima neque asperiores eligendi quisquam in minus iusto autem alias molestiae ut nemo, iste molestias ab voluptate!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officia labore eos omnis delectus, excepturi debitis fugiat, placeat tempora quas corporis ratione expedita hic consectetur error quia maxime? Est, quo!
-            </div>
-        <div class="card">
-            <div class="card-wrapper">
-                <h2>Instagram</h2>
-                <p>Ou mais do meu dia a dia</p>
-            </div>
-            </div>
-        </div>
-    </main>
+</main>
     <footer class="footer">
         feito por Lucas h. de Godoy
     </footer>
-    <script src="javascript.js"></script>
+   
 </body>
+<script src="javascript.js"></script>
 </html>
