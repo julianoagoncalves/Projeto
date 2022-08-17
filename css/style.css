@@ -43,7 +43,7 @@ nav {
     }
 }
 .perfil{
-    padding: 0;
+    padding: auto;
     height: auto;
     width: 500px;
 }
@@ -67,11 +67,10 @@ h1 {
 }
 
 }
-
+*
 .sobreu {
     height: 100vh;
     width: 100%;
-    background: #bdbaba;
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -119,11 +118,10 @@ form {
 h5 {
     color: #000000;
 }
-
 /*cards*/
 .containerr {
-    width: 100%;
-    height: auto;
+    width: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,13 +137,8 @@ h5 {
 }
 
 .card {
-    height: 300px;
-    width: 400px;
-    margin: 3rem 0 0 0;
+    width: 100%;
     background-image: url('../img/room.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,13 +146,17 @@ h5 {
     color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
+    height: 100vh;
+    background-size: cover;
+    background-attachment:fixed ;
+    border-radius: 0;
 }
 
 .card-text {
     width: 40%;
     font-family: sans-serif;
     letter-spacing: 1px;
-    color:  rgb(109, 109, 109);
+    color:  rgb(255, 255, 255);
 }
 
 .card-wrapper {
@@ -206,8 +203,8 @@ h5 {
 
 .card:hover > .card-wrapper::before {
     opacity: 1;
-    width: 350px;
-    height: 250px;
+    width: 1000px;
+    height: 500px;
 }
 
 .card:hover > .card-wrapper p {
@@ -217,6 +214,7 @@ h5 {
 }
 
 /*footer*/ 
+
 .footer {
     height: 100px;
     width: 100%;
